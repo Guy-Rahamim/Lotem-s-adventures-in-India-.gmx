@@ -1,0 +1,9 @@
+if(place_meeting(x,y+vsp,obj_snake))
+{
+while(!place_meeting(x,y,obj_snake))
+{
+y+=sign(vsp);
+}
+vsp=0;
+}
+y+=vsp;
